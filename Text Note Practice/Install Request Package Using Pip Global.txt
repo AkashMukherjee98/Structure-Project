@@ -1,0 +1,101 @@
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Cbnits-27>pip list
+Package         Version
+--------------- -------
+cycler          0.11.0
+distlib         0.3.4
+filelock        3.7.0
+fonttools       4.33.3
+kiwisolver      1.4.2
+matplotlib      3.5.2
+numpy           1.22.4
+packaging       21.3
+pandas          1.4.2
+Pillow          9.1.1
+pip             22.0.4
+platformdirs    2.5.2
+pyparsing       3.0.9
+python-dateutil 2.8.2
+pytz            2022.1
+setuptools      58.1.0
+six             1.16.0
+virtualenv      20.14.1
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\Cbnits-27>py -m pip install --upgrade pip.
+ERROR: Invalid requirement: 'pip.'
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\Cbnits-27>py -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (22.0.4)
+Collecting pip
+  Downloading pip-22.1.1-py3-none-any.whl (2.1 MB)
+     ---------------------------------------- 2.1/2.1 MB 4.3 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 22.0.4
+    Uninstalling pip-22.0.4:
+      Successfully uninstalled pip-22.0.4
+Successfully installed pip-22.1.1
+
+C:\Users\Cbnits-27>pip install Requests
+Collecting Requests
+  Downloading requests-2.27.1-py2.py3-none-any.whl (63 kB)
+     ---------------------------------------- 63.1/63.1 kB 1.1 MB/s eta 0:00:00
+Collecting certifi>=2017.4.17
+  Downloading certifi-2022.5.18.1-py3-none-any.whl (155 kB)
+     ---------------------------------------- 155.2/155.2 kB 4.7 MB/s eta 0:00:00
+Collecting idna<4,>=2.5
+  Downloading idna-3.3-py3-none-any.whl (61 kB)
+     ---------------------------------------- 61.2/61.2 kB 1.6 MB/s eta 0:00:00
+Collecting charset-normalizer~=2.0.0
+  Downloading charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+     ---------------------------------------- 139.0/139.0 kB 4.0 MB/s eta 0:00:00
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, Requests
+Successfully installed Requests-2.27.1 certifi-2022.5.18.1 charset-normalizer-2.0.12 idna-3.3 urllib3-1.26.9
+
+C:\Users\Cbnits-27>Requests --version
+'Requests' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Cbnits-27>requests --version
+'requests' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Cbnits-27>pip list
+Package            Version
+------------------ -----------
+certifi            2022.5.18.1
+charset-normalizer 2.0.12
+cycler             0.11.0
+distlib            0.3.4
+filelock           3.7.0
+fonttools          4.33.3
+idna               3.3
+kiwisolver         1.4.2
+matplotlib         3.5.2
+numpy              1.22.4
+packaging          21.3
+pandas             1.4.2
+Pillow             9.1.1
+pip                22.1.1
+platformdirs       2.5.2
+pyparsing          3.0.9
+python-dateutil    2.8.2
+pytz               2022.1
+requests           2.27.1
+setuptools         58.1.0
+six                1.16.0
+urllib3            1.26.9
+virtualenv         20.14.1
+
+C:\Users\Cbnits-27>pip requests --version
+ERROR: unknown command "requests"
+
+C:\Users\Cbnits-27>

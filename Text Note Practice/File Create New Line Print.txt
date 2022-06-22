@@ -1,0 +1,68 @@
+import subprocess
+#import sys
+import os
+
+#from unittest import result
+def create_dir():
+    subprocess.run(['mkdir', 'Hello1'], shell=True)
+    print("Directory is created")
+def create_file():  
+    #subprocess.run(['cd Hello1'], shell=True)
+    subprocess.run(['type>', 'Hello1/sample.txt'], shell=True)
+    print("File is created")
+    #newLine="end='\n'"
+    c='\n'
+    subprocess.run(['echo>>','Hello1/sample.txt','This is line 1'], shell=True)
+    subprocess.run(['echo>>','Hello1/sample.txt','This is line 2'], shell=True)
+    #subprocess.Popen(['echo>Hello1/sample.txt','hello',newline,'hi'])
+    print("writing is completed into the file")
+    #subprocess.run(['type','sample.txt'], shell=True)
+    #p=subprocess.check_output("echo hello \r\n world", shell=True)
+    #print(p)
+def read_file():
+    #print("Show The Line From Creating File")
+    subprocess.run(['type','E:\Test\Hello1\sample.txt'], shell=True)
+def exit_file():
+    print("Run Again")
+#    result=subprocess.run(["ls"], stdout=subprocess.PIPE)
+#    print(result.stdout.decode())
+
+
+
+def check(agrument):
+    match agrument:
+        case 1:
+            return create_dir()
+        case 2:
+            return create_file()
+        case 3:
+            return read_file()
+        case 4:
+            return exit_file()
+
+choice =int(input("1.create directory  2.create file 3. read file \n Enter your choice: "))
+operation =[create_dir, create_file, read_file, exit_file]
+try:
+    if __name__ == "__main__":
+        while(choice!=4):
+            if(choice>=1): 
+                operation =[create_dir, create_file, read_file, exit_file]
+                output =operation[choice-1]()
+                choice =int(input("1.create directory  2.create file 3. read file \n Enter your choice: "))
+                operation =[create_dir, create_file, read_file, exit_file]
+                output =operation[choice-1]()       
+except Exception as e:
+    print(e)
+
+    
+     
+    '''
+    print("Enter your choice: 1.create directory  2.create file 3. read file")
+    agrument = sys.argv
+    number_to_string(agrument)
+    '''
+'''
+with open('out.txt', 'w') as f:
+    result=subprocess.run(["w", 'hello'], stdout=f, stderr=subprocess.PIPE, text=True)
+'''
+

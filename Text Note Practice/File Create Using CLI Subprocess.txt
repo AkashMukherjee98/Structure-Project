@@ -1,0 +1,60 @@
+import subprocess
+#import sys
+import os
+
+#from unittest import result
+
+def create_dir():
+    subprocess.run(['mkdir', 'Hello1'], shell=True)
+    print("Directory is created")
+def create_file():  
+    #subprocess.run(['cd Hello1'], shell=True)
+    subprocess.run(['type>', 'Hello1/sample.txt'], shell=True)
+    print("File is created")
+    #print("Write here: ")
+    subprocess.run(['echo>Hello1/sample.txt','Line New line hi I hero'], shell=True)
+    #subprocess.run(['type','sample.txt'], shell=True)
+
+def read_file():
+  subprocess.run(['type','E:\Test\Hello1\sample.txt'], shell=True)
+
+#    result=subprocess.run(["ls"], stdout=subprocess.PIPE)
+#    print(result.stdout.decode())
+
+
+
+def check(agrument):
+    match agrument:
+        case 1:
+            return create_dir()
+        case 2:
+            return create_file()
+        case 3:
+            return read_file()
+
+choice =int(input("1.create directory  2.create file 3. read file 4.exit \n Enter your choice: "))
+operation =[create_dir, create_file, read_file]
+try:
+    if __name__ == "__main__":
+        while(choice!=4):
+            if(choice>=1): 
+                operation =[create_dir, create_file, read_file, exit]
+                output =operation[choice-1]()
+                choice =int(input("1.create directory  2.create file 3. read file 4.exit \n Enter your choice: "))
+                operation =[create_dir, create_file, read_file, exit]
+                output =operation[choice-1]()       
+except Exception as e:
+    print(e)
+
+    
+     
+    '''
+    print("Enter your choice: 1.create directory  2.create file 3. read file")
+    agrument = sys.argv
+    number_to_string(agrument)
+    '''
+'''
+with open('out.txt', 'w') as f:
+    result=subprocess.run(["w", 'hello'], stdout=f, stderr=subprocess.PIPE, text=True)
+'''
+

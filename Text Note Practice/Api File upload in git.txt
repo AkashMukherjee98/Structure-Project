@@ -1,0 +1,63 @@
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project
+$ git init
+Initialized empty Git repository in E:/pyEnv/Project/.git/
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (master)
+$ git config --global user.name "AkashMukherjee98"
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (master)
+$ git config --global user.email "akash.mukherjee@cbnits.com"
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (master)
+$ git config user.email
+akash.mukherjee@cbnits.com
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (master)
+$ git config user.name
+AkashMukherjee98
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (master)
+$ git add CreateToken.py
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   CreateToken.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .env
+        requirements.txt
+
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (master)
+$ git commit -m "first commit"
+[master (root-commit) d5662fe] first commit
+ 1 file changed, 427 insertions(+)
+ create mode 100644 CreateToken.py
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (master)
+$ git branch -M main
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (main)
+$ git remote add origin https://github.com/AkashMukherjee98/Project.git
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 3.00 KiB | 511.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AkashMukherjee98/Project.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/pyEnv/Project (main)
+$

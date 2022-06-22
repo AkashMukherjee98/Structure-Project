@@ -1,0 +1,263 @@
+
+(env) E:\pyEnv>py -m pip install --user virtualenv
+Requirement already satisfied: virtualenv in c:\users\cbnits-27\appdata\roaming\python\python310\site-packages (20.14.1)
+Requirement already satisfied: platformdirs<3,>=2 in c:\users\cbnits-27\appdata\roaming\python\python310\site-packages (from virtualenv) (2.5.2)
+Requirement already satisfied: six<2,>=1.9.0 in c:\users\cbnits-27\appdata\roaming\python\python310\site-packages (from virtualenv) (1.16.0)
+Requirement already satisfied: distlib<1,>=0.3.1 in c:\users\cbnits-27\appdata\roaming\python\python310\site-packages (from virtualenv) (0.3.4)
+Requirement already satisfied: filelock<4,>=3.2 in c:\users\cbnits-27\appdata\roaming\python\python310\site-packages (from virtualenv) (3.7.1)
+
+(env) E:\pyEnv>pip --version
+pip 22.1.2 from C:\Program Files\Python310\lib\site-packages\pip (python 3.10)
+
+(env) E:\pyEnv>py -m venv env
+
+(env) E:\pyEnv>env\Scripts\activate
+
+(env) E:\pyEnv>py -m pip install requests
+Collecting requests
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Collecting charset-normalizer~=2.0.0
+  Using cached charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+Collecting certifi>=2017.4.17
+  Using cached certifi-2022.5.18.1-py3-none-any.whl (155 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Using cached urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+Collecting idna<4,>=2.5
+  Using cached idna-3.3-py3-none-any.whl (61 kB)
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+Successfully installed certifi-2022.5.18.1 charset-normalizer-2.0.12 idna-3.3 requests-2.27.1 urllib3-1.26.9
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>py -m pip install jwt
+Collecting jwt
+  Using cached jwt-1.3.1-py3-none-any.whl (18 kB)
+Collecting cryptography!=3.4.0,>=3.1
+  Using cached cryptography-37.0.2-cp36-abi3-win_amd64.whl (2.4 MB)
+Collecting cffi>=1.12
+  Using cached cffi-1.15.0-cp310-cp310-win_amd64.whl (180 kB)
+Collecting pycparser
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Installing collected packages: pycparser, cffi, cryptography, jwt
+Successfully installed cffi-1.15.0 cryptography-37.0.2 jwt-1.3.1 pycparser-2.21
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>py -m pip install flask
+Collecting flask
+  Using cached Flask-2.1.2-py3-none-any.whl (95 kB)
+Collecting click>=8.0
+  Using cached click-8.1.3-py3-none-any.whl (96 kB)
+Collecting Werkzeug>=2.0
+  Using cached Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+Collecting Jinja2>=3.0
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting itsdangerous>=2.0
+  Using cached itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting colorama
+  Using cached colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting MarkupSafe>=2.0
+  Using cached MarkupSafe-2.1.1-cp310-cp310-win_amd64.whl (17 kB)
+Installing collected packages: Werkzeug, MarkupSafe, itsdangerous, colorama, Jinja2, click, flask
+Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Werkzeug-2.1.2 click-8.1.3 colorama-0.4.4 flask-2.1.2 itsdangerous-2.1.2
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>py -m pip install pymysql
+Collecting pymysql
+  Using cached PyMySQL-1.0.2-py3-none-any.whl (43 kB)
+Installing collected packages: pymysql
+Successfully installed pymysql-1.0.2
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>py -m pip install python-dotenv
+Collecting python-dotenv
+  Using cached python_dotenv-0.20.0-py3-none-any.whl (17 kB)
+Installing collected packages: python-dotenv
+Successfully installed python-dotenv-0.20.0
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>py -m pip install flask-restful
+Collecting flask-restful
+  Using cached Flask_RESTful-0.3.9-py2.py3-none-any.whl (25 kB)
+Requirement already satisfied: Flask>=0.8 in e:\pyenv\env\lib\site-packages (from flask-restful) (2.1.2)
+Collecting six>=1.3.0
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting pytz
+  Using cached pytz-2022.1-py2.py3-none-any.whl (503 kB)
+Collecting aniso8601>=0.82
+  Using cached aniso8601-9.0.1-py2.py3-none-any.whl (52 kB)
+Requirement already satisfied: Jinja2>=3.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.8->flask-restful) (3.1.2)
+Requirement already satisfied: click>=8.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.8->flask-restful) (8.1.3)
+Requirement already satisfied: itsdangerous>=2.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.8->flask-restful) (2.1.2)
+Requirement already satisfied: Werkzeug>=2.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.8->flask-restful) (2.1.2)
+Requirement already satisfied: colorama in e:\pyenv\env\lib\site-packages (from click>=8.0->Flask>=0.8->flask-restful) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in e:\pyenv\env\lib\site-packages (from Jinja2>=3.0->Flask>=0.8->flask-restful) (2.1.1)
+Installing collected packages: pytz, aniso8601, six, flask-restful
+Successfully installed aniso8601-9.0.1 flask-restful-0.3.9 pytz-2022.1 six-1.16.0
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>py -m pip install ed!
+ERROR: Invalid requirement: 'ed!'
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>pip install mysql-connector-python
+Collecting mysql-connector-python
+  Using cached mysql_connector_python-8.0.29-cp310-cp310-win_amd64.whl (7.7 MB)
+Collecting protobuf>=3.0.0
+  Using cached protobuf-4.21.1-cp310-abi3-win_amd64.whl (524 kB)
+Installing collected packages: protobuf, mysql-connector-python
+Successfully installed mysql-connector-python-8.0.29 protobuf-4.21.1
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>pip install -U Flask-SQLAlchemy
+Collecting Flask-SQLAlchemy
+  Using cached Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl (17 kB)
+Requirement already satisfied: Flask>=0.10 in e:\pyenv\env\lib\site-packages (from Flask-SQLAlchemy) (2.1.2)
+Collecting SQLAlchemy>=0.8.0
+  Using cached SQLAlchemy-1.4.37-cp310-cp310-win_amd64.whl (1.6 MB)
+Requirement already satisfied: Jinja2>=3.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.10->Flask-SQLAlchemy) (3.1.2)
+Requirement already satisfied: Werkzeug>=2.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.10->Flask-SQLAlchemy) (2.1.2)
+Requirement already satisfied: click>=8.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.10->Flask-SQLAlchemy) (8.1.3)
+Requirement already satisfied: itsdangerous>=2.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.10->Flask-SQLAlchemy) (2.1.2)
+Collecting greenlet!=0.4.17
+  Using cached greenlet-1.1.2-cp310-cp310-win_amd64.whl (101 kB)
+Requirement already satisfied: colorama in e:\pyenv\env\lib\site-packages (from click>=8.0->Flask>=0.10->Flask-SQLAlchemy) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in e:\pyenv\env\lib\site-packages (from Jinja2>=3.0->Flask>=0.10->Flask-SQLAlchemy) (2.1.1)
+Installing collected packages: greenlet, SQLAlchemy, Flask-SQLAlchemy
+Successfully installed Flask-SQLAlchemy-2.5.1 SQLAlchemy-1.4.37 greenlet-1.1.2
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>pip list
+Package                Version
+---------------------- -----------
+aniso8601              9.0.1
+certifi                2022.5.18.1
+cffi                   1.15.0
+charset-normalizer     2.0.12
+click                  8.1.3
+colorama               0.4.4
+cryptography           37.0.2
+Flask                  2.1.2
+Flask-RESTful          0.3.9
+Flask-SQLAlchemy       2.5.1
+greenlet               1.1.2
+idna                   3.3
+itsdangerous           2.1.2
+Jinja2                 3.1.2
+jwt                    1.3.1
+MarkupSafe             2.1.1
+mysql-connector-python 8.0.29
+pip                    22.0.4
+protobuf               4.21.1
+pycparser              2.21
+PyMySQL                1.0.2
+python-dotenv          0.20.0
+pytz                   2022.1
+requests               2.27.1
+setuptools             58.1.0
+six                    1.16.0
+SQLAlchemy             1.4.37
+urllib3                1.26.9
+Werkzeug               2.1.2
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>python "CreateToken.py"
+C:\Program Files\Python310\python.exe: can't open file 'E:\\pyEnv\\CreateToken.py': [Errno 2] No such file or directory
+
+(env) E:\pyEnv>cd Project
+
+(env) E:\pyEnv\Project>python "CreateToken.py"
+ * Serving Flask app 'CreateToken' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 701-949-883
+Error:  module 'jwt' has no attribute 'decode'
+127.0.0.1 - - [09/Jun/2022 16:58:37] "GET /authen HTTP/1.1" 200 -
+
+(env) E:\pyEnv\Project>cd..
+
+(env) E:\pyEnv>pip install pyjwt
+Collecting pyjwt
+  Using cached PyJWT-2.4.0-py3-none-any.whl (18 kB)
+Installing collected packages: pyjwt
+Successfully installed pyjwt-2.4.0
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>pip list
+Package                Version
+---------------------- -----------
+aniso8601              9.0.1
+certifi                2022.5.18.1
+cffi                   1.15.0
+charset-normalizer     2.0.12
+click                  8.1.3
+colorama               0.4.4
+cryptography           37.0.2
+Flask                  2.1.2
+Flask-RESTful          0.3.9
+Flask-SQLAlchemy       2.5.1
+greenlet               1.1.2
+idna                   3.3
+itsdangerous           2.1.2
+Jinja2                 3.1.2
+jwt                    1.3.1
+MarkupSafe             2.1.1
+mysql-connector-python 8.0.29
+pip                    22.0.4
+protobuf               4.21.1
+pycparser              2.21
+PyJWT                  2.4.0
+PyMySQL                1.0.2
+python-dotenv          0.20.0
+pytz                   2022.1
+requests               2.27.1
+setuptools             58.1.0
+six                    1.16.0
+SQLAlchemy             1.4.37
+urllib3                1.26.9
+Werkzeug               2.1.2
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>cd Project
+
+(env) E:\pyEnv\Project>python "CreateToken.py"
+ * Serving Flask app 'CreateToken' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 701-949-883
+{'id': '4', 'pass': '012', 'date': '2022-06-09 12:01:19.662055'}
+4
+Connected to MySQL Server version  8.0.29
+select * from company.users where usersId=4
+127.0.0.1 - - [09/Jun/2022 17:01:43] "GET /authen HTTP/1.1" 200 -
+
+(env) E:\pyEnv\Project>python
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>

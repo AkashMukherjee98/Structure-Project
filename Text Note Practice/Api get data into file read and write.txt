@@ -1,0 +1,156 @@
+from fileinput import filename
+from tkinter import W
+from unittest import result
+from flask import Flask, jsonify 
+import requests
+import json
+app=Flask(__name__)
+
+@app.route('/')
+def dummy_api():
+    return "Welcome Here"
+
+
+@app.route('/getdata', methods=['GET'])
+def readdata():
+    try:
+        #return "Hello!"
+        jfile=open('E:\\API\\create.json','r')
+        jdata=jfile.read()
+        obj=json.loads(jdata)
+        print(obj)
+        return jdata
+    except Exception as err:
+        print(err)
+        return err    
+
+@app.route('/writedata', methods=['GET'])
+def writedata():
+    filename='E:\API\create.json'
+    with open(filename,'r') as file:
+        # First we load existing data into a dict.
+        file_data = json.load(file)
+        # Join new_data with file_data inside emp_details
+    y={"Name": "Person_6","Age": "43","Email": "9@gmail.com"}
+    file_data.append(y)
+        
+    with open(filename, "w") as jsonFile:
+        json.dump(file_data, jsonFile)    
+    
+    return jsonify(file_data)
+        # convert back to json.
+        #json.dump(file_data, file, indent =1, separators=(',',': '))
+        #python object to be appended
+
+
+
+# @app.route('/writedata', methods=['GET'])
+
+# def writedata():
+#     filename='E:\API\create.json'
+#     z=json.loads(filename)
+#     print("ss: ",z)
+#     #with open(filename, 'w') as json_file:
+        
+#         #y={"Name": "Person_3","Age": "33","Email": "33@gmail.com"}
+#         #z.update(y)
+#         #return(json.dumps(z, json_file))
+#         #return(json.dumps(z, json_file, indent=1,separators=(',',': ')))
+#     #return "Successfully appended to the JSON file"
+
+
+# writedata()
+
+
+
+
+# @app.route('/writedata', methods=['POST'])
+
+# def writedata():
+#     filename='E:\API\create.json'
+#     with open(filename,'a') as file:
+#         entry='{"Roy":50}'
+#         data=json.loads(file)
+#         data.append(entry)
+#         json.dump(dict,file)
+
+
+
+if __name__== "__main__":
+    app.run(debug=True, host="0.0.0.0", port="5001")
+_____________________________________________________________
+
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\API>python "check.py"
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+
+E:\API>python "check.py" 
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.       
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+
+E:\API>python "check.py"
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.       
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+
+E:\API>python "check.py"
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.       
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+^C
+E:\API>
+
+E:\API>
+E:\API>python "check.py"
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.       
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+
+E:\API>
+
+E:\API>
+
+E:\API>python "check.py"
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.       
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+
+E:\API>
+E:\API>python "check.py" 

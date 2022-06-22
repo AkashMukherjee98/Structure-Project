@@ -1,0 +1,430 @@
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "E:\API\check.py", line 3, in <module>
+    from unittest import result
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\unittest\__init__.py", line 65, in <module>
+    from .main import TestProgram, main
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1012, in get_code
+  File "<frozen importlib._bootstrap_external>", line 672, in _compile_bytecode
+KeyboardInterrupt
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+127.0.0.1 - - [01/Jun/2022 17:59:03] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [01/Jun/2022 17:59:09] "GET /getdata HTTP/1.1" 200 -
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+127.0.0.1 - - [01/Jun/2022 17:59:57] "GET /getdata HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+[{'Name': 'Person_1', 'Age': '3', 'Email': '33@gmail.com'}, {'Name': 'Person_4', 'Age': '43', 'Email': '3@gmail.com'}]
+127.0.0.1 - - [01/Jun/2022 18:00:51] "GET /getdata HTTP/1.1" 200 -
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+127.0.0.1 - - [01/Jun/2022 18:03:41] "GET /writedata HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'writedata' did not return a valid response. The function either returned None or ended without a return statement.
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+
+E:\API>
+
+E:\API>
+
+E:\API>
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+127.0.0.1 - - [01/Jun/2022 18:05:09] "GET /writedata HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "E:\API\check.py", line 32, in writedata
+    file_data = json.load(file)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 11 column 3 (char 132)
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+127.0.0.1 - - [01/Jun/2022 18:07:25] "GET /writedata HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2095, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2080, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'writedata' did not return a valid response. The function either returned None or ended without a return statement.
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+  File "E:\API\check.py", line 36
+    json_var = json.dump(file_data, file)
+IndentationError: unexpected indent
+
+E:\API>python check.py
+ * Serving Flask app 'check' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+127.0.0.1 - - [01/Jun/2022 18:11:21] "GET /writedata HTTP/1.1" 200 -
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+ * Detected change in 'E:\\API\\check.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+127.0.0.1 - - [01/Jun/2022 18:12:00] "GET /writedata HTTP/1.1" 200 -
+ * Detected change in 'E:\\API\\SqlConnection.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+ * Detected change in 'E:\\API\\SqlConnection.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 100-020-593
+
+
+
+______________________________________________________________________________________________________________________
+
+
+
+
+____________________________
+
+
+from msilib.schema import Error
+from urllib import response
+from flask import Flask, jsonify ,request
+import requests
+import json
+app=Flask(__name__)
+
+@app.route('/')
+def dummy_api():
+    return "Welcome Here"
+
+
+@app.route('/getdata', methods=['GET'])
+def readdata():
+    try:
+        #return "Hello!"
+        jfile=open('E:\\API\\create.json','r')
+        jdata=jfile.read()
+        obj=json.loads(jdata)
+        print(obj)
+        return jdata
+    except Exception as err:
+        print(err)
+        return err    
+
+@app.route('/writedata', methods=['GET'])
+def writedata():
+    filename='E:\API\create.json'
+    with open(filename,'r') as file:
+        # First we load existing data into a dict.
+        file_data = json.load(file)
+        # Join new_data with file_data inside emp_details
+    y={"Name": "Anik","Age": "23","Email": "so@gmail.com"}
+    file_data.append(y)
+    with open(filename, "w") as jsonFile:
+        json.dump(file_data, jsonFile)    
+    
+    return jsonify(file_data)
+
+
+      
+@app.route('/enterdata/<name>/<age>/<email>', methods=['POST'])
+def enterdata(name,age,email):
+    filename='E:\API\create.json'
+    with open(filename,'r') as file:
+        # First we load existing data into a dict.
+        file_data = json.load(file)
+        #print (name)
+        #print(age)
+        #print(email)
+        # Join new_data with file_data inside emp_details
+    #y={}
+        
+    try:
+        y={"Name": name,"Age": age,"Email": email}
+        file_data.append(y)
+        with open(filename, "w") as jsonFile:
+            json.dump(file_data,jsonFile)
+        return 'Ok'
+    except Exception as e:
+        print(e)
+        return 'error'
+
+
+@app.route('/inputdata', methods=['POST'])
+def inputdata():
+    try:
+        filename='E:\API\create.json'
+        with open(filename,'r') as file:
+        # First we load existing data into a dict.
+            file_data = json.load(file)
+        content_type = request.headers.get('Content-Type')
+        if (content_type == 'application/json'):
+            json_file = request.get_json()
+            file_data.append(json_file)
+            with open(filename, "w") as jsonFile:
+              json.dump(file_data,jsonFile) 
+            return json_file
+        else:
+            return 'Content-Type not supported!'
+    except Exception as e:
+        print("error",e)
+        return '404'
+        
+
+
+
+
+
+# writedata()
+
+
+
+
+# @app.route('/writedata', methods=['POST'])
+
+# def writedata():
+#     filename='E:\API\create.json'
+#     with open(filename,'a') as file:
+#         entry='{"Roy":50}'
+#         data=json.loads(file)
+#         data.append(entry)
+#         json.dump(dict,file)
+
+
+
+if __name__== "__main__":
+    app.run(debug=True, host="0.0.0.0", port="5001")

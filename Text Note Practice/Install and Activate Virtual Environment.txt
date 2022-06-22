@@ -1,0 +1,34 @@
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Cbnits-27>E:
+
+E:\>cd Virtual Environment Again
+
+E:\Virtual Environment Again>pip install virtualenv
+Requirement already satisfied: virtualenv in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (20.14.1)
+Requirement already satisfied: filelock<4,>=3.2 in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (from virtualenv) (3.7.0)
+Requirement already satisfied: six<2,>=1.9.0 in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (from virtualenv) (1.16.0)
+Requirement already satisfied: distlib<1,>=0.3.1 in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (from virtualenv) (0.3.4)
+Requirement already satisfied: platformdirs<3,>=2 in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (from virtualenv) (2.5.2)
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+E:\Virtual Environment Again>virtualenv --version
+virtualenv 20.14.1 from C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\virtualenv\__init__.py
+
+E:\Virtual Environment Again>virtualenv env
+created virtual environment CPython3.10.4.final.0-64 in 625ms
+  creator CPython3Windows(dest=E:\Virtual Environment Again\env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Cbnits-27\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==22.0.4, setuptools==62.1.0, wheel==0.37.1
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+E:\Virtual Environment Again>\env\Scripts\activate.bat
+The system cannot find the path specified.
+
+E:\Virtual Environment Again>
+
+E:\Virtual Environment Again>env\Scripts\activate.bat
+
+(env) E:\Virtual Environment Again>

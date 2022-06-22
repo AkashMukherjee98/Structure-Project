@@ -1,0 +1,40 @@
+cbnits@cbnits-To-be-filled-by-O-E-M:~$ sudo apt-get install git
+[sudo] password for cbnits: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libfwupdplugin1
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 1 not upgraded.
+Need to get 5,471 kB of archives.
+After this operation, 38.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://in.archive.ubuntu.com/ubuntu focal/main amd64 liberror-perl all 0.17029-1 [26.5 kB]
+Get:2 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 git-man all 1:2.25.1-1ubuntu3.4 [885 kB]
+Get:3 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.4 [4,560 kB]
+Fetched 5,471 kB in 3s (1,887 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 177998 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17029-1_all.deb ...
+Unpacking liberror-perl (0.17029-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.25.1-1ubuntu3.4_all.deb ...
+Unpacking git-man (1:2.25.1-1ubuntu3.4) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.25.1-1ubuntu3.4_amd64.deb ...
+Unpacking git (1:2.25.1-1ubuntu3.4) ...
+Setting up liberror-perl (0.17029-1) ...
+Setting up git-man (1:2.25.1-1ubuntu3.4) ...
+Setting up git (1:2.25.1-1ubuntu3.4) ...
+Processing triggers for man-db (2.9.1-1) ...
+cbnits@cbnits-To-be-filled-by-O-E-M:~$ git --version
+git version 2.25.1
+cbnits@cbnits-To-be-filled-by-O-E-M:~$ 

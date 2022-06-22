@@ -1,0 +1,43 @@
+PostMan
+Postman is an API Client.
+
+API:
+An API (Application Programming Interface) is a set of functions 
+that allows applications to access data and interact with external 
+software components, operating systems, or microservices. 
+To simplify, an API delivers a user request to a system and sends 
+the system's response back to a user.03-May-2021
+
+Create Token:
+jwcrypto
+JWT :Json Web Token.It is used for web application.
+used for microservices. RFC 7519 structurd like ecmassscript 
+or Es standard specification. 
+Auth Strategy : jwt token and session token.
+both used for controlling Http: stateless behaviour 
+meaning http does not remember all data.
+We used to share data from one server to another server through 
+http server.Http server does not remember all data for client useses.
+For Dynamic web page users will have to send token for access 
+http web page.But for Dynamic web pages it is not important.
+Session id always saved iin cookie of the browser.used for Old version.
+In case of mordern version: There are multiple server.
+Load balancer desided that where the user token send the server1 or server2 or server3?
+1 send back the session id to the user. same way again send the 
+token to the browser 2 in this case browser did not recognise so that 
+token always genared in Shared Radis Session DB or radis cash. 
+The flow of Micrpservises is if radies server is down then session id can 
+not get inspite of being all server running. That's why JWT is needed.
+After creating JWT token always saved it in browser cokkie or local storage.
+JWT Three Part: 
+Header: Individual Json. 
+Payload:Individual Json.Main Data 
+Signature:Sign of an Authorization mean Secrate Key hash key.
+Based 64 Encoded data is called Payload data.
+Secret key is store only on server.JWT is not a password it is kind of 
+user identity by which browser can easily identify the valid user.  
+  
+study from link:
+https://jwt.io/libraries
+
+

@@ -1,0 +1,60 @@
+(test) E:\VirtualEnvironmentTest>dir
+ Volume in drive E is E
+ Volume Serial Number is 364E-F7F1
+
+ Directory of E:\VirtualEnvironmentTest
+
+20/05/2022  16:35    <DIR>          .
+20/05/2022  16:35    <DIR>          ..
+20/05/2022  16:36    <DIR>          p1
+20/05/2022  16:00    <DIR>          test
+20/05/2022  15:50    <DIR>          __pycache__
+               0 File(s)              0 bytes
+               5 Dir(s)  290,029,871,104 bytes free
+
+(test) E:\VirtualEnvironmentTest>cd p1
+
+(test) E:\VirtualEnvironmentTest\p1>dir
+ Volume in drive E is E
+ Volume Serial Number is 364E-F7F1
+
+ Directory of E:\VirtualEnvironmentTest\p1
+
+20/05/2022  16:36    <DIR>          .
+20/05/2022  16:36    <DIR>          ..
+20/05/2022  16:27               401 matpot.py
+20/05/2022  15:50               149 numpy_test.py
+20/05/2022  16:36                16 requirements.txt
+               3 File(s)            566 bytes
+               2 Dir(s)  290,029,871,104 bytes free
+
+(test) E:\VirtualEnvironmentTest\p1>pip install -r requirements.txt
+Requirement already satisfied: numpy in e:\virtualenvironmenttest\test\lib\site-packages (from -r requirements.txt (line 1)) (1.22.3)
+ERROR: Could not find a version that satisfies the requirement matpotlib (from versions: none)
+ERROR: No matching distribution found for matpotlib
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'E:\VirtualEnvironmentTest\test\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test) E:\VirtualEnvironmentTest\p1>pip install -r requirements.txt
+Requirement already satisfied: numpy in e:\virtualenvironmenttest\test\lib\site-packages (from -r requirements.txt (line 1)) (1.22.3)
+Requirement already satisfied: matplotlib in e:\virtualenvironmenttest\test\lib\site-packages (from -r requirements.txt (line 2)) (3.5.2)
+Collecting pandas
+  Downloading pandas-1.4.2-cp310-cp310-win_amd64.whl (10.6 MB)
+     ---------------------------------------- 10.6/10.6 MB 10.2 MB/s eta 0:00:00
+Requirement already satisfied: pillow>=6.2.0 in e:\virtualenvironmenttest\test\lib\site-packages (from matplotlib->-r requirements.txt (line 2)) (9.1.1)
+Requirement already satisfied: fonttools>=4.22.0 in e:\virtualenvironmenttest\test\lib\site-packages (from matplotlib->-r requirements.txt (line 2)) (4.33.3)
+Requirement already satisfied: kiwisolver>=1.0.1 in e:\virtualenvironmenttest\test\lib\site-packages (from matplotlib->-r requirements.txt (line 2)) (1.4.2)
+Requirement already satisfied: cycler>=0.10 in e:\virtualenvironmenttest\test\lib\site-packages (from matplotlib->-r requirements.txt (line 2)) (0.11.0)
+Requirement already satisfied: packaging>=20.0 in e:\virtualenvironmenttest\test\lib\site-packages (from matplotlib->-r requirements.txt (line 2)) (21.3)
+Requirement already satisfied: pyparsing>=2.2.1 in e:\virtualenvironmenttest\test\lib\site-packages (from matplotlib->-r requirements.txt (line 2)) (3.0.9)
+Requirement already satisfied: python-dateutil>=2.7 in e:\virtualenvironmenttest\test\lib\site-packages (from matplotlib->-r requirements.txt (line 2)) (2.8.2)
+Collecting pytz>=2020.1
+  Downloading pytz-2022.1-py2.py3-none-any.whl (503 kB)
+     ---------------------------------------- 503.5/503.5 KB 6.3 MB/s eta 0:00:00
+Requirement already satisfied: six>=1.5 in e:\virtualenvironmenttest\test\lib\site-packages (from python-dateutil>=2.7->matplotlib->-r requirements.txt (line 2)) (1.16.0)
+Installing collected packages: pytz, pandas
+Successfully installed pandas-1.4.2 pytz-2022.1
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'E:\VirtualEnvironmentTest\test\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test) E:\VirtualEnvironmentTest\p1>

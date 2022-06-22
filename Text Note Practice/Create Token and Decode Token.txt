@@ -1,0 +1,50 @@
+'''
+import jwt
+encoded = jwt.encode({'some': 'payload'}, 'secret', algorithm='HS256')
+#'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb21lIjoicGF5bG9hZCJ9.4twFt5NiznN84AWoo1d7KO1T_yoc0Z6XOpOVswacPZg'
+print(encoded)
+print('\n')
+decoded=jwt.decode(encoded, 'secret', algorithms=['HS256'])
+print(decoded)
+'''
+import jwt
+import datetime
+from flask import Flask, jsonify 
+import requests
+import json
+app=Flask(__name__)
+
+@app.route('/')
+
+def dummy_api():
+    return "Welcome For Creating Token Put /createtoken in url bar: "
+
+
+@app.route('/createtoken', methods=['GET'])
+def createtoken():
+    SECRET_KEY = "akash_98"
+    # json data to encode
+    json_data = {
+
+        "iss": "Akash Mukherjee",
+        "sub": "Java",
+        "message": "It is Object Oriented Language",
+        "date": str(datetime.datetime.now())
+    }
+    encode_data = jwt.encode(payload=json_data, key=SECRET_KEY, algorithm="HS256")
+    return encode_data 
+
+#createtoken()
+@app.route('/decodetoken', methods=['GET'])
+def decodetoken():
+    SECRET_KEY = "akash_98"
+    token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBa2FzaCBNdWtoZXJqZWUiLCJzdWIiOiJKYXZhIiwibWVzc2FnZSI6Ikl0IGlzIE9iamVjdCBPcmllbnRlZCBMYW5ndWFnZSIsImRhdGUiOiIyMDIyLTA1LTMxIDEwOjQ4OjQwLjE4MzUyNiJ9.6HHlDNHJ6Yen62BCLQiPQop3VUTKOqAV8lM8QtLjPWs"
+    try:
+        decode_data = jwt.decode(jwt=token, key=SECRET_KEY, algorithms="HS256")
+        return decode_data
+    except Exception as e:
+        message = f"Token is invalid --> {e}"
+        return ({"message": message})
+#decodetoken()
+if __name__== "__main__":
+    app.run()

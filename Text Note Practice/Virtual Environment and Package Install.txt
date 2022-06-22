@@ -1,0 +1,114 @@
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Cbnits-27>E:
+
+E:\>cd VirtualEnvironmentTest
+
+E:\VirtualEnvironmentTest>pip install virtualenv
+Requirement already satisfied: virtualenv in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (20.14.1)
+Requirement already satisfied: platformdirs<3,>=2 in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (from virtualenv) (2.5.2)
+Requirement already satisfied: six<2,>=1.9.0 in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (from virtualenv) (1.16.0)
+Requirement already satisfied: distlib<1,>=0.3.1 in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (from virtualenv) (0.3.4)
+Requirement already satisfied: filelock<4,>=3.2 in c:\users\cbnits-27\appdata\local\programs\python\python310\lib\site-packages (from virtualenv) (3.7.0)
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+E:\VirtualEnvironmentTest>virtualenv --version
+virtualenv 20.14.1 from C:\Users\Cbnits-27\AppData\Local\Programs\Python\Python310\lib\site-packages\virtualenv\__init__.py
+
+E:\VirtualEnvironmentTest>virtualenv test
+created virtual environment CPython3.10.4.final.0-64 in 714ms
+  creator CPython3Windows(dest=E:\VirtualEnvironmentTest\test, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Cbnits-27\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==22.0.4, setuptools==62.1.0, wheel==0.37.1
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+E:\VirtualEnvironmentTest>dir
+ Volume in drive E is E
+ Volume Serial Number is 364E-F7F1
+
+ Directory of E:\VirtualEnvironmentTest
+
+20/05/2022  15:13    <DIR>          .
+20/05/2022  15:13    <DIR>          ..
+20/05/2022  15:13    <DIR>          test
+               0 File(s)              0 bytes
+               3 Dir(s)  290,146,394,112 bytes free
+
+E:\VirtualEnvironmentTest>cd test
+
+E:\VirtualEnvironmentTest\test>cd Scripts
+
+E:\VirtualEnvironmentTest\test\Scripts>dir
+ Volume in drive E is E
+ Volume Serial Number is 364E-F7F1
+
+ Directory of E:\VirtualEnvironmentTest\test\Scripts
+
+20/05/2022  15:13    <DIR>          .
+20/05/2022  15:13    <DIR>          ..
+20/05/2022  15:13             2,153 activate
+20/05/2022  15:13               993 activate.bat
+20/05/2022  15:13             3,030 activate.fish
+20/05/2022  15:13             2,579 activate.nu
+20/05/2022  15:13             1,758 activate.ps1
+20/05/2022  15:13             1,193 activate_this.py
+20/05/2022  15:13               510 deactivate.bat
+20/05/2022  15:13               682 deactivate.nu
+20/05/2022  15:13           106,872 pip-3.10.exe
+20/05/2022  15:13           106,872 pip.exe
+20/05/2022  15:13           106,872 pip3.10.exe
+20/05/2022  15:13           106,872 pip3.exe
+20/05/2022  15:13                24 pydoc.bat
+20/05/2022  15:13           263,120 python.exe
+20/05/2022  15:13           251,856 pythonw.exe
+20/05/2022  15:13           106,859 wheel-3.10.exe
+20/05/2022  15:13           106,859 wheel.exe
+20/05/2022  15:13           106,859 wheel3.10.exe
+20/05/2022  15:13           106,859 wheel3.exe
+              19 File(s)      1,382,822 bytes
+               2 Dir(s)  290,146,394,112 bytes free
+
+E:\VirtualEnvironmentTest\test\Scripts>activate
+
+(test) E:\VirtualEnvironmentTest\test\Scripts>pip list
+Package    Version
+---------- -------
+pip        22.0.4
+setuptools 62.1.0
+wheel      0.37.1
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'E:\VirtualEnvironmentTest\test\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test) E:\VirtualEnvironmentTest\test\Scripts>pip --version
+pip 22.0.4 from E:\VirtualEnvironmentTest\test\lib\site-packages\pip (python 3.10)
+
+(test) E:\VirtualEnvironmentTest\test\Scripts>pip list
+Package    Version
+---------- -------
+pip        22.0.4
+setuptools 62.1.0
+wheel      0.37.1
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'E:\VirtualEnvironmentTest\test\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test) E:\VirtualEnvironmentTest\test\Scripts>pip install numpy
+Collecting numpy
+  Using cached numpy-1.22.3-cp310-cp310-win_amd64.whl (14.7 MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.22.3
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'E:\VirtualEnvironmentTest\test\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test) E:\VirtualEnvironmentTest\test\Scripts>pip list
+Package    Version
+---------- -------
+numpy      1.22.3
+pip        22.0.4
+setuptools 62.1.0
+wheel      0.37.1
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'E:\VirtualEnvironmentTest\test\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test) E:\VirtualEnvironmentTest\test\Scripts>

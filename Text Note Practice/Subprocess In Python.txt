@@ -1,0 +1,6 @@
+import subprocess
+import os
+#crate Two directory Subprocess and Test by using this command 
+p=subprocess.Popen("mkdir Subprocess Test", shell=True)
+os.chdir("extractions")
+

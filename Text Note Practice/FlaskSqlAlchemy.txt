@@ -1,0 +1,76 @@
+(env) E:\pyEnv\Project>cd..
+
+(env) E:\pyEnv>python
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from Test import app
+>>> from Test import db
+>>> db.create_all()
+>>>
+
+----------------------------------------------------------------
+Microsoft Windows [Version 10.0.19044.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\pyEnv\Project>cd..
+
+E:\pyEnv>env\Scripts\activate
+
+(env) E:\pyEnv>python Test.py
+C:\Program Files\Python310\python.exe: can't open file 'E:\\pyEnv\\Test.py': [Errno 2] No such file or directory
+
+(env) E:\pyEnv>cd Project
+
+(env) E:\pyEnv\Project>python Test.py
+ * Serving Flask app 'Test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 142-988-713
+
+
+127.0.0.1 - - [13/Jun/2022 10:21:16] "GET /fetch HTTP/1.1" 200 -
+
+(env) E:\pyEnv\Project>python
+  File "<stdin>", line 1
+    exit.
+         ^
+Use exit() or Ctrl-Z plus Return to exit
+>>> exit ()
+
+(env) E:\pyEnv\Project>python
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from Test import app
+>>> db.create_all()
+>>> exit()
+
+(env) E:\pyEnv\Project>python Test.py
+ * Serving Flask app 'Test' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 142-988-713
+127.0.0.1 - - [13/Jun/2022 11:00:56] "POST /admininput HTTP/1.1" 500 -
+KeyError: 'username'
+ * Detected change in 'E:\\pyEnv\\Project\\Test.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 142-988-713
+Akash
+aka@gmail.com
+127.0.0.1 - - [13/Jun/2022 11:03:45] "POST /admininput HTTP/1.1" 200 -

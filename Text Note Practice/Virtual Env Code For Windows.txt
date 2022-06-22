@@ -1,0 +1,511 @@
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\pyEnv>python --version
+Python 3.10.4
+
+E:\pyEnv>python3 -m pip --version
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+
+E:\pyEnv>python -m pip --version
+pip 22.1.2 from C:\Program Files\Python310\lib\site-packages\pip (python 3.10)
+
+E:\pyEnv>python -m pip install --user --upgrade pip
+Requirement already satisfied: pip in c:\program files\python310\lib\site-packages (22.1.2)
+
+E:\pyEnv>py -m venv env
+
+E:\pyEnv>.\env\Scripts\activate
+
+(env) E:\pyEnv>cd Project
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+ERROR: Invalid requirement: 'aniso8601              9.0.1' (from line 1 of requirements.txt)
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+ERROR: Invalid requirement: 'certifi                2022.5.18.1' (from line 1 of requirements.txt)
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+ERROR: Invalid requirement: 'Flask                  2.1.2' (from line 1 of requirements.txt)
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>python -m pip install --user --upgrade pip
+ERROR: Can not perform a '--user' install. User site-packages are not visible in this virtualenv.
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>pip --version
+pip 22.0.4 from E:\pyEnv\env\lib\site-packages\pip (python 3.10)
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+ERROR: Invalid requirement: 'Flask                  2.1.2' (from line 1 of requirements.txt)
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+ERROR: Invalid requirement: 'Flask 2.1.2' (from line 1 of requirements.txt)
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+ERROR: Invalid requirement: 'flask 2.1.2' (from line 1 of requirements.txt)
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+Collecting flask
+  Using cached Flask-2.1.2-py3-none-any.whl (95 kB)
+Collecting itsdangerous>=2.0
+  Using cached itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting Werkzeug>=2.0
+  Using cached Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+Collecting click>=8.0
+  Using cached click-8.1.3-py3-none-any.whl (96 kB)
+Collecting Jinja2>=3.0
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting colorama
+  Using cached colorama-0.4.4-py2.py3-none-any.whl (16 kB)
+Collecting MarkupSafe>=2.0
+  Using cached MarkupSafe-2.1.1-cp310-cp310-win_amd64.whl (17 kB)
+Installing collected packages: Werkzeug, MarkupSafe, itsdangerous, colorama, Jinja2, click, flask
+Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Werkzeug-2.1.2 click-8.1.3 colorama-0.4.4 flask-2.1.2 itsdangerous-2.1.2
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+Requirement already satisfied: flask in e:\pyenv\env\lib\site-packages (from -r requirements.txt (line 1)) (2.1.2)
+Collecting jwt
+  Using cached jwt-1.3.1-py3-none-any.whl (18 kB)
+Collecting requests
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Collecting pymySql
+  Using cached PyMySQL-1.0.2-py3-none-any.whl (43 kB)
+Collecting dotenv
+  Using cached dotenv-0.0.5.tar.gz (2.4 kB)
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [65 lines of output]
+      WARNING: The wheel package is not available.
+        error: subprocess-exited-with-error
+
+        python setup.py egg_info did not run successfully.
+        exit code: 1
+
+        [16 lines of output]
+        Traceback (most recent call last):
+          File "<string>", line 2, in <module>
+          File "<pip-setuptools-caller>", line 14, in <module>
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-y91kpo0b\distribute_6416d05ec4e04f44a3da375c71fc8e3d\setuptools\__init__.py", line 2, in <module>
+            from setuptools.extension import Extension, Library
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-y91kpo0b\distribute_6416d05ec4e04f44a3da375c71fc8e3d\setuptools\extension.py", line 5, in <module>
+            from setuptools.dist import _get_unpatched
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-y91kpo0b\distribute_6416d05ec4e04f44a3da375c71fc8e3d\setuptools\dist.py", line 7, in <module>
+            from setuptools.command.install import install
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-y91kpo0b\distribute_6416d05ec4e04f44a3da375c71fc8e3d\setuptools\command\__init__.py", line 8, in <module>
+            from setuptools.command import install_scripts
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-y91kpo0b\distribute_6416d05ec4e04f44a3da375c71fc8e3d\setuptools\command\install_scripts.py", line 3, in <module>
+            from pkg_resources import Distribution, PathMetadata, ensure_directory
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-y91kpo0b\distribute_6416d05ec4e04f44a3da375c71fc8e3d\pkg_resources.py", line 1518, in <module>
+            register_loader_type(importlib_bootstrap.SourceFileLoader, DefaultProvider)
+        AttributeError: module 'importlib._bootstrap' has no attribute 'SourceFileLoader'
+        [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+      error: metadata-generation-failed
+
+      Encountered error while generating package metadata.
+
+      See above for output.
+
+      note: This is an issue with the package mentioned above, not pip.
+      hint: See above for details.
+      Traceback (most recent call last):
+        File "E:\pyEnv\env\lib\site-packages\setuptools\installer.py", line 75, in fetch_build_egg
+          subprocess.check_call(cmd)
+        File "C:\Program Files\Python310\lib\subprocess.py", line 369, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['E:\\pyEnv\\env\\Scripts\\python.exe', '-m', 'pip', '--disable-pip-version-check', 'wheel', '--no-deps', '-w', 'C:\\Users\\CBNITS~1\\AppData\\Local\\Temp\\tmpxx14r_7n', '--quiet', 'distribute']' returned non-zero exit status 1.
+
+      The above exception was the direct cause of the following exception:
+
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-install-q24vwt_x\dotenv_a6faeba0baf24a1eab9c1a9851b2bba8\setup.py", line 13, in <module>
+          setup(name='dotenv',
+        File "E:\pyEnv\env\lib\site-packages\setuptools\__init__.py", line 152, in setup
+          _install_setup_requires(attrs)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\__init__.py", line 147, in _install_setup_requires
+          dist.fetch_build_eggs(dist.setup_requires)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\dist.py", line 806, in fetch_build_eggs
+          resolved_dists = pkg_resources.working_set.resolve(
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 766, in resolve
+          dist = best[req.key] = env.best_match(
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 1051, in best_match
+          return self.obtain(req, installer)
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 1063, in obtain
+          return installer(requirement)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\dist.py", line 877, in fetch_build_egg
+          return fetch_build_egg(self, req)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\installer.py", line 77, in fetch_build_egg
+          raise DistutilsError(str(e)) from e
+      distutils.errors.DistutilsError: Command '['E:\\pyEnv\\env\\Scripts\\python.exe', '-m', 'pip', '--disable-pip-version-check', 'wheel', '--no-deps', '-w', 'C:\\Users\\CBNITS~1\\AppData\\Local\\Temp\\tmpxx14r_7n', '--quiet', 'distribute']' returned non-zero exit status 1.
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip install -r requirements.txt
+Requirement already satisfied: flask in e:\pyenv\env\lib\site-packages (from -r requirements.txt (line 1)) (2.1.2)
+Collecting jwt
+  Using cached jwt-1.3.1-py3-none-any.whl (18 kB)
+Collecting requests
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Collecting pymySql
+  Using cached PyMySQL-1.0.2-py3-none-any.whl (43 kB)
+Collecting dotenv
+  Using cached dotenv-0.0.5.tar.gz (2.4 kB)
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [65 lines of output]
+      WARNING: The wheel package is not available.
+        error: subprocess-exited-with-error
+
+        python setup.py egg_info did not run successfully.
+        exit code: 1
+
+        [16 lines of output]
+        Traceback (most recent call last):
+          File "<string>", line 2, in <module>
+          File "<pip-setuptools-caller>", line 14, in <module>
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-uckhljpz\distribute_73440bcc47044a299955166781143bfd\setuptools\__init__.py", line 2, in <module>
+            from setuptools.extension import Extension, Library
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-uckhljpz\distribute_73440bcc47044a299955166781143bfd\setuptools\extension.py", line 5, in <module>
+            from setuptools.dist import _get_unpatched
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-uckhljpz\distribute_73440bcc47044a299955166781143bfd\setuptools\dist.py", line 7, in <module>
+            from setuptools.command.install import install
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-uckhljpz\distribute_73440bcc47044a299955166781143bfd\setuptools\command\__init__.py", line 8, in <module>
+            from setuptools.command import install_scripts
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-uckhljpz\distribute_73440bcc47044a299955166781143bfd\setuptools\command\install_scripts.py", line 3, in <module>
+            from pkg_resources import Distribution, PathMetadata, ensure_directory
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-uckhljpz\distribute_73440bcc47044a299955166781143bfd\pkg_resources.py", line 1518, in <module>
+            register_loader_type(importlib_bootstrap.SourceFileLoader, DefaultProvider)
+        AttributeError: module 'importlib._bootstrap' has no attribute 'SourceFileLoader'
+        [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+      error: metadata-generation-failed
+
+      Encountered error while generating package metadata.
+
+      See above for output.
+
+      note: This is an issue with the package mentioned above, not pip.
+      hint: See above for details.
+      Traceback (most recent call last):
+        File "E:\pyEnv\env\lib\site-packages\setuptools\installer.py", line 75, in fetch_build_egg
+          subprocess.check_call(cmd)
+        File "C:\Program Files\Python310\lib\subprocess.py", line 369, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['E:\\pyEnv\\env\\Scripts\\python.exe', '-m', 'pip', '--disable-pip-version-check', 'wheel', '--no-deps', '-w', 'C:\\Users\\CBNITS~1\\AppData\\Local\\Temp\\tmpj88jxhsv', '--quiet', 'distribute']' returned non-zero exit status 1.
+
+      The above exception was the direct cause of the following exception:
+
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-install-3r6f422j\dotenv_4d5963986c0e452986275caf4f4dddbd\setup.py", line 13, in <module>
+          setup(name='dotenv',
+        File "E:\pyEnv\env\lib\site-packages\setuptools\__init__.py", line 152, in setup
+          _install_setup_requires(attrs)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\__init__.py", line 147, in _install_setup_requires
+          dist.fetch_build_eggs(dist.setup_requires)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\dist.py", line 806, in fetch_build_eggs
+          resolved_dists = pkg_resources.working_set.resolve(
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 766, in resolve
+          dist = best[req.key] = env.best_match(
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 1051, in best_match
+          return self.obtain(req, installer)
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 1063, in obtain
+          return installer(requirement)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\dist.py", line 877, in fetch_build_egg
+          return fetch_build_egg(self, req)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\installer.py", line 77, in fetch_build_egg
+          raise DistutilsError(str(e)) from e
+      distutils.errors.DistutilsError: Command '['E:\\pyEnv\\env\\Scripts\\python.exe', '-m', 'pip', '--disable-pip-version-check', 'wheel', '--no-deps', '-w', 'C:\\Users\\CBNITS~1\\AppData\\Local\\Temp\\tmpj88jxhsv', '--quiet', 'distribute']' returned non-zero exit status 1.
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip install mysql-connector-python
+Collecting mysql-connector-python
+  Using cached mysql_connector_python-8.0.29-cp310-cp310-win_amd64.whl (7.7 MB)
+Collecting protobuf>=3.0.0
+  Using cached protobuf-4.21.1-cp310-abi3-win_amd64.whl (524 kB)
+Installing collected packages: protobuf, mysql-connector-python
+Successfully installed mysql-connector-python-8.0.29 protobuf-4.21.1
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>pip install PyMySQL
+Collecting PyMySQL
+  Using cached PyMySQL-1.0.2-py3-none-any.whl (43 kB)
+Installing collected packages: PyMySQL
+Successfully installed PyMySQL-1.0.2
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>pip install jwt
+Collecting jwt
+  Using cached jwt-1.3.1-py3-none-any.whl (18 kB)
+Collecting cryptography!=3.4.0,>=3.1
+  Using cached cryptography-37.0.2-cp36-abi3-win_amd64.whl (2.4 MB)
+Collecting cffi>=1.12
+  Using cached cffi-1.15.0-cp310-cp310-win_amd64.whl (180 kB)
+Collecting pycparser
+  Using cached pycparser-2.21-py2.py3-none-any.whl (118 kB)
+Installing collected packages: pycparser, cffi, cryptography, jwt
+Successfully installed cffi-1.15.0 cryptography-37.0.2 jwt-1.3.1 pycparser-2.21
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>py -m pip freeze requirements.txt
+cffi==1.15.0
+click==8.1.3
+colorama==0.4.4
+cryptography==37.0.2
+Flask==2.1.2
+itsdangerous==2.1.2
+Jinja2==3.1.2
+jwt==1.3.1
+MarkupSafe==2.1.1
+mysql-connector-python==8.0.29
+protobuf==4.21.1
+pycparser==2.21
+PyMySQL==1.0.2
+Werkzeug==2.1.2
+
+(env) E:\pyEnv\Project>py -m pip freeze>requirements.txt
+
+(env) E:\pyEnv\Project>python "CreateToken.py"
+Traceback (most recent call last):
+  File "E:\pyEnv\Project\CreateToken.py", line 10, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+(env) E:\pyEnv\Project>python "CreateToken.py"
+Traceback (most recent call last):
+  File "E:\pyEnv\Project\CreateToken.py", line 10, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+(env) E:\pyEnv\Project>cd..
+
+(env) E:\pyEnv>pip install dotenv
+Collecting dotenv
+  Using cached dotenv-0.0.5.tar.gz (2.4 kB)
+  Preparing metadata (setup.py) ... error
+  error: subprocess-exited-with-error
+
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [65 lines of output]
+      WARNING: The wheel package is not available.
+        error: subprocess-exited-with-error
+
+        python setup.py egg_info did not run successfully.
+        exit code: 1
+
+        [16 lines of output]
+        Traceback (most recent call last):
+          File "<string>", line 2, in <module>
+          File "<pip-setuptools-caller>", line 14, in <module>
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-u20n5z_v\distribute_c7c105b7c8db41198dfd9fe0fa0e94d7\setuptools\__init__.py", line 2, in <module>
+            from setuptools.extension import Extension, Library
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-u20n5z_v\distribute_c7c105b7c8db41198dfd9fe0fa0e94d7\setuptools\extension.py", line 5, in <module>
+            from setuptools.dist import _get_unpatched
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-u20n5z_v\distribute_c7c105b7c8db41198dfd9fe0fa0e94d7\setuptools\dist.py", line 7, in <module>
+            from setuptools.command.install import install
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-u20n5z_v\distribute_c7c105b7c8db41198dfd9fe0fa0e94d7\setuptools\command\__init__.py", line 8, in <module>
+            from setuptools.command import install_scripts
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-u20n5z_v\distribute_c7c105b7c8db41198dfd9fe0fa0e94d7\setuptools\command\install_scripts.py", line 3, in <module>
+            from pkg_resources import Distribution, PathMetadata, ensure_directory
+          File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-wheel-u20n5z_v\distribute_c7c105b7c8db41198dfd9fe0fa0e94d7\pkg_resources.py", line 1518, in <module>
+            register_loader_type(importlib_bootstrap.SourceFileLoader, DefaultProvider)
+        AttributeError: module 'importlib._bootstrap' has no attribute 'SourceFileLoader'
+        [end of output]
+
+        note: This error originates from a subprocess, and is likely not a problem with pip.
+      error: metadata-generation-failed
+
+      Encountered error while generating package metadata.
+
+      See above for output.
+
+      note: This is an issue with the package mentioned above, not pip.
+      hint: See above for details.
+      Traceback (most recent call last):
+        File "E:\pyEnv\env\lib\site-packages\setuptools\installer.py", line 75, in fetch_build_egg
+          subprocess.check_call(cmd)
+        File "C:\Program Files\Python310\lib\subprocess.py", line 369, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['E:\\pyEnv\\env\\Scripts\\python.exe', '-m', 'pip', '--disable-pip-version-check', 'wheel', '--no-deps', '-w', 'C:\\Users\\CBNITS~1\\AppData\\Local\\Temp\\tmpsluc79mz', '--quiet', 'distribute']' returned non-zero exit status 1.
+
+      The above exception was the direct cause of the following exception:
+
+      Traceback (most recent call last):
+        File "<string>", line 2, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "C:\Users\Cbnits-27\AppData\Local\Temp\pip-install-toil7kd4\dotenv_dfe43dd0c34448ad9fbe721f95a02d4a\setup.py", line 13, in <module>
+          setup(name='dotenv',
+        File "E:\pyEnv\env\lib\site-packages\setuptools\__init__.py", line 152, in setup
+          _install_setup_requires(attrs)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\__init__.py", line 147, in _install_setup_requires
+          dist.fetch_build_eggs(dist.setup_requires)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\dist.py", line 806, in fetch_build_eggs
+          resolved_dists = pkg_resources.working_set.resolve(
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 766, in resolve
+          dist = best[req.key] = env.best_match(
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 1051, in best_match
+          return self.obtain(req, installer)
+        File "E:\pyEnv\env\lib\site-packages\pkg_resources\__init__.py", line 1063, in obtain
+          return installer(requirement)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\dist.py", line 877, in fetch_build_egg
+          return fetch_build_egg(self, req)
+        File "E:\pyEnv\env\lib\site-packages\setuptools\installer.py", line 77, in fetch_build_egg
+          raise DistutilsError(str(e)) from e
+      distutils.errors.DistutilsError: Command '['E:\\pyEnv\\env\\Scripts\\python.exe', '-m', 'pip', '--disable-pip-version-check', 'wheel', '--no-deps', '-w', 'C:\\Users\\CBNITS~1\\AppData\\Local\\Temp\\tmpsluc79mz', '--quiet', 'distribute']' returned non-zero exit status 1.
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>pip install python-dotenv
+Collecting python-dotenv
+  Using cached python_dotenv-0.20.0-py3-none-any.whl (17 kB)
+Installing collected packages: python-dotenv
+Successfully installed python-dotenv-0.20.0
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>py -m pip freeze>requirements.txt
+
+(env) E:\pyEnv>cd Project
+
+(env) E:\pyEnv\Project>python "CreateToken.py"
+Traceback (most recent call last):
+  File "E:\pyEnv\Project\CreateToken.py", line 12, in <module>
+    from requests import session
+ModuleNotFoundError: No module named 'requests'
+
+(env) E:\pyEnv\Project>cd..
+
+(env) E:\pyEnv>pip install requests
+Collecting requests
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Using cached urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+Collecting idna<4,>=2.5
+  Using cached idna-3.3-py3-none-any.whl (61 kB)
+Collecting charset-normalizer~=2.0.0
+  Using cached charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+Collecting certifi>=2017.4.17
+  Using cached certifi-2022.5.18.1-py3-none-any.whl (155 kB)
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+Successfully installed certifi-2022.5.18.1 charset-normalizer-2.0.12 idna-3.3 requests-2.27.1 urllib3-1.26.9
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv>cd Project
+
+(env) E:\pyEnv\Project>python "CreateToken.py"
+Traceback (most recent call last):
+  File "E:\pyEnv\Project\CreateToken.py", line 13, in <module>
+    from flask_restful import Api,fields,Resource
+ModuleNotFoundError: No module named 'flask_restful'
+
+(env) E:\pyEnv\Project>pip install flask-restful
+Collecting flask-restful
+  Using cached Flask_RESTful-0.3.9-py2.py3-none-any.whl (25 kB)
+Collecting six>=1.3.0
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: Flask>=0.8 in e:\pyenv\env\lib\site-packages (from flask-restful) (2.1.2)
+Collecting pytz
+  Using cached pytz-2022.1-py2.py3-none-any.whl (503 kB)
+Collecting aniso8601>=0.82
+  Using cached aniso8601-9.0.1-py2.py3-none-any.whl (52 kB)
+Requirement already satisfied: itsdangerous>=2.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.8->flask-restful) (2.1.2)
+Requirement already satisfied: click>=8.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.8->flask-restful) (8.1.3)
+Requirement already satisfied: Jinja2>=3.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.8->flask-restful) (3.1.2)
+Requirement already satisfied: Werkzeug>=2.0 in e:\pyenv\env\lib\site-packages (from Flask>=0.8->flask-restful) (2.1.2)
+Requirement already satisfied: colorama in e:\pyenv\env\lib\site-packages (from click>=8.0->Flask>=0.8->flask-restful) (0.4.4)
+Requirement already satisfied: MarkupSafe>=2.0 in e:\pyenv\env\lib\site-packages (from Jinja2>=3.0->Flask>=0.8->flask-restful) (2.1.1)
+Installing collected packages: pytz, aniso8601, six, flask-restful
+Successfully installed aniso8601-9.0.1 flask-restful-0.3.9 pytz-2022.1 six-1.16.0
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the 'E:\pyEnv\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\pyEnv\Project>
+(env) E:\pyEnv\Project>py -m pip freeze>requirements.txt
+
+(env) E:\pyEnv\Project>python "CreateToken.py"
+ * Serving Flask app 'CreateToken' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.97:5001 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 701-949-883
+id:  1
+paswd:  123
+Connected to MySQL Server version  8.0.29
+check3:  1
+check4 1
+check3:  2
+check4 1
+check3:  3
+check4 1
+check3:  4
+check4 1
+127.0.0.1 - - [08/Jun/2022 11:54:15] "POST /login HTTP/1.1" 200 -

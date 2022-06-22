@@ -1,0 +1,14 @@
+from configparser import ConfigParser
+from app import app
+from flask_sqlalchemy import SQLAlchemy
+
+
+file="config.ini"
+config=ConfigParser()
+config.read(file)
+#api.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost/alchemy'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://'+config['mysql']['user']+":"+config['mysql']['pswd']+"@"+config['mysql']['host']+"/"+config['mysql']['dbase']
+#api.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+#api.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost/student'
+db=SQLAlchemy(app)
+db.init_app(app)

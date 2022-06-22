@@ -1,0 +1,58 @@
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\VirtualEnvironmentTest\test\Scripts>activate
+
+(test) E:\VirtualEnvironmentTest\test\Scripts>cd..
+
+(test) E:\VirtualEnvironmentTest\test>cd..
+
+(test) E:\VirtualEnvironmentTest>cd P1
+
+(test) E:\VirtualEnvironmentTest\p1>pip install requests
+Collecting requests
+  Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+Collecting idna<4,>=2.5
+  Using cached idna-3.3-py3-none-any.whl (61 kB)
+Collecting certifi>=2017.4.17
+  Using cached certifi-2022.5.18.1-py3-none-any.whl (155 kB)
+Collecting charset-normalizer~=2.0.0
+  Using cached charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Using cached urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+Successfully installed certifi-2022.5.18.1 charset-normalizer-2.0.12 idna-3.3 requests-2.27.1 urllib3-1.26.9
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'E:\VirtualEnvironmentTest\test\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test) E:\VirtualEnvironmentTest\p1>pip list
+Package            Version
+------------------ -----------
+asgiref            3.5.2
+certifi            2022.5.18.1
+charset-normalizer 2.0.12
+cycler             0.11.0
+Django             4.0.4
+fonttools          4.33.3
+idna               3.3
+kiwisolver         1.4.2
+matplotlib         3.5.2
+numpy              1.22.3
+packaging          21.3
+pandas             1.4.2
+Pillow             9.1.1
+pip                22.0.4
+pyparsing          3.0.9
+python-dateutil    2.8.2
+pytz               2022.1
+requests           2.27.1
+setuptools         62.1.0
+six                1.16.0
+sqlparse           0.4.2
+tzdata             2022.1
+urllib3            1.26.9
+wheel              0.37.1
+WARNING: You are using pip version 22.0.4; however, version 22.1 is available.
+You should consider upgrading via the 'E:\VirtualEnvironmentTest\test\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(test) E:\VirtualEnvironmentTest\p1>

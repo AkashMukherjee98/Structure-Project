@@ -1,0 +1,139 @@
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (alpha)
+$ git status
+On branch alpha
+nothing to commit, working tree clean
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (alpha)
+$ git branch --list
+  Check
+* alpha
+  master
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (alpha)
+$ git checkout -b beta
+Switched to a new branch 'beta'
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git status
+On branch beta
+nothing to commit, working tree clean
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git add .
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git status
+On branch beta
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git add .
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git status
+On branch beta
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.txt
+
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git commit -m 'ok'
+[beta c0383d0] ok
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git push origin ^C
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git push origin beta
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'beta' on GitHub by visiting:
+remote:      https://github.com/AkashMukherjee98/firsttest/pull/new/beta
+remote:
+To https://github.com/AkashMukherjee98/firsttest.git
+ * [new branch]      beta -> beta
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git status
+On branch beta
+nothing to commit, working tree clean
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git push -u origin beta
+Everything up-to-date
+branch 'beta' set up to track 'origin/beta'.
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git status
+On branch beta
+Your branch is up to date with 'origin/beta'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Print.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git add Print.py
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git status
+On branch beta
+Your branch is up to date with 'origin/beta'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Print.py
+
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git commit -m 'print'
+[beta f018e41] print
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Print.py
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git status
+On branch beta
+Your branch is ahead of 'origin/beta' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git push -u origin beta
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 289.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AkashMukherjee98/firsttest.git
+   c0383d0..f018e41  beta -> beta
+branch 'beta' set up to track 'origin/beta'.
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$ git status
+On branch beta
+Your branch is up to date with 'origin/beta'.
+
+nothing to commit, working tree clean
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Program (beta)
+$

@@ -1,0 +1,76 @@
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test
+$ git init
+Initialized empty Git repository in E:/Third Test/.git/
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git config --global user.name "AkashMukherjee98"
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git config --global user.email "akash.mukherjee@cbnits.com"
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git config user.email
+akash.mukherjee@cbnits.com
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git config user.name
+AkashMukherjee98
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ touch Hello.txt
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ touch Hi.txt
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git add -A
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hello.txt
+        new file:   Hi.txt
+
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git commit -m "first commit"
+[master (root-commit) 5d16ba1] first commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Hello.txt
+ create mode 100644 Hi.txt
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git remote add third https://github.com/AkashMukherjee98/Third-Test.git
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git remote
+third
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ git push -u third master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AkashMukherjee98/Third-Test.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'third/master'.
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$ ^C
+
+Cbnits-27@DESKTOP-ERDD7GC MINGW64 /e/Third Test (master)
+$
